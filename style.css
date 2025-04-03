@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+:root {
+  --light-bg-color: #fff;
+  --dark-bg-color: #fff;
+  --light-text-color: #1a1a1a;
+  --heading-color: #1a1a1a;
+  --text-color: #1a1a1a;
+  --common-padding: 0 8vw;
+  font-size: 10px;
+}
+
+:root.dark {
+  --light-bg-color: #111;
+  --dark-bg-color: #000;
+  --light-text-color: #f0f0f0;
+  --heading-color: #fff;
+  --text-color: #c4c4c4;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 
+
+  font-family: monospace;
+
+*/
+a {
+  color: var(--light-text-color);
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+  color: violet;
+}
+
+ul {
+  list-style: none;
+}
+
+/* -----------header start---------------- */
+
+header {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--common-padding);
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+  min-height: 12vh;
+  align-items: center;
+}
+.header-left a {
+  font-size: 3rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+nav ul li button {
+  background-color: transparent;
+  border: none;
+  color: var(--light-text-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+nav ul li button:hover {
+  color: violet;
+}
+
+#sun {
+  display: none;
+}
+
+/* -----------header end---------------- */
+
+/* ------------main start -------------- */
+
+main {
+  font-size: 1.5rem;
+  min-height: 88vh;
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+  padding: var(--common-padding);
+}
+
+.hey-para {
+  padding-top: 12vh;
+}
+
+.name-para,
+.about-para,
+.hey-para {
+  padding-bottom: 8vh;
+}
+/* .about-para {
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+} */
+
+.name-para {
+  font-size: 8rem;
+  font-family: monospace;
+  color: #787e7f;
+  background-image: linear-gradient(
+    45deg,
+    #787e7f,
+    #fe5370 25%,
+    #9806c8 50%,
+    #d13cf5 75%,
+    #36de49 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.main-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-btns-left ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-btns-left ul li {
+  background: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  padding: 0.2rem;
+  display: flex;
+  border-radius: 4px;
+}
+.main-btns-left ul li a {
+  padding: 1rem 2rem;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+}
+
+.main-btns-left ul li a span i {
+  padding-right: 1rem;
+}
+
+/* ------------main end -------------- */
+
+.box {
+  height: 100vh;
+  background-color: violet;
+}
+
+#projects {
+  height: 50vh;
+  background: black;
+  color: white;
+}
+
+.profile {
+  width: 300px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 20px #4ecdc4, 0 0 40px #349090;
+  animation: glow-border 1.5s infinite alternate;
+  float: right;
+  margin-left: 50px;
+  margin-right: 20PX;
+}

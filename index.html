@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit Chavan | Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-left">
+        <a href="/"><i class="fa-brands fa-staylinked"></i></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a href="Rohit.Resume" download>Resume</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <button onclick="changeTheme()">
+              <i class="fa-solid fa-sun" id="sun"></i>
+              <i class="fa-solid fa-moon" id="moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <p class="hey-para">Hey, I'm</p>
+
+      <div class="profile">
+      <img src="portfolio.img.jpg" width="300px" >
+      </div>
+
+      <p class="name-para">Rohit Chavan</p>
+      <p class="about-para">
+        I'm a software engineer based in Toronto, Canada and also a
+        communication and journalism student. I enjoy creating things that live
+        on the internet, whether that be websites, applications, or anything in
+        between. I have been freelancing for a year now while studying at the
+        university and I've manage to gain a decent amount of experience and
+        valuable knowledge from all different kinds of fields throughout my
+        projects/work.
+      </p>
+
+      <div class="main-btns">
+        <div class="main-btns-left">
+          <ul>
+            <li>
+              <a href="mailto:salmanksdfj@gmail.com">
+                <span><i class="fa-solid fa-envelope"></i> Send an Email </span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <span><i class="fa-brands fa-linkedin-in"></i> Linkedin </span>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <span> <i class="fa-brands fa-github"></i>Github </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-btns-right">
+          <i class="fa-solid fa-arrow-down"></i>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
